@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { motion } from "framer-motion";
+import PortfolioHomepage from "./Pages/PortfolioHomepage";
+import AboutMe from "./Pages/AboutMe";
+import Skills from "./Pages/Skills";
+import Projects from "./Pages/Projects";
+import PageTransition from "./Components/PageTransition";
+import Services from "./Components/Services";
+import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
+import Navbar from "./Components/Navbar";
+import "./App.css";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("home");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <div className="App">
+      <Navbar setCurrentPage={setCurrentPage} isHomePage={currentPage === 'home'} />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <section id="home">
+            <PortfolioHomepage />
+          </section>
+          <section id="about">
+            <AboutMe />
+          </section>
+          <section id="skills">
+            <PageTransition>
+              <Skills />
+            </PageTransition>
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="services">
+            <Services />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+          <section>
+            <Footer />
+          </section>
+        </motion.div>
+      </div>
+    </Router>
   );
 }
 

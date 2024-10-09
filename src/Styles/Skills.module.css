@@ -1,0 +1,294 @@
+.skillsContainer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.skillsContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #a6d1cb;
+  text-shadow: 0 0 15px rgba(166, 209, 203, 0.5);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #a6d1cb, transparent);
+}
+
+.educationSection {
+  margin-bottom: 80px;
+}
+
+.educationCard {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid rgba(166, 209, 203, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.educationCard:hover {
+  box-shadow: 0 8px 25px rgba(166, 209, 203, 0.2);
+  transform: translateY(-5px);
+}
+
+.educationCard.active {
+  background-color: rgba(30, 30, 26, 0.9);
+}
+
+.educationCard h3 {
+  color: #a6d1cb;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.educationCard p {
+  line-height: 1.6;
+  color: #c7d7d4;
+  font-size: 1rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.educationCard.active p {
+  opacity: 1;
+  max-height: 1000px; /* Ajusta este valor según sea necesario */
+}
+
+.skillsCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skillCategory {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skillCategory:hover {
+  box-shadow: 0 8px 25px rgba(166, 209, 203, 0.2);
+  transform: translateY(-5px);
+}
+
+.skillCategory h3 {
+  color: #a6d1cb;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skillIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #89a19c;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background: rgba(30, 30, 26, 0.6);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillIcon:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: rgba(40, 40, 36, 0.8);
+  box-shadow: 0 5px 15px rgba(166, 209, 203, 0.3);
+}
+
+.skillIcon svg {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skillIcon:hover svg {
+  transform: scale(1.1);
+}
+
+.skillIcon span {
+  font-size: 0.9rem;
+}
+
+/* Animación de fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .skillsContent {
+    padding: 60px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .skillCategory {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsContent {
+    padding: 50px 15px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .educationCard h3 {
+    font-size: 1.4rem;
+  }
+
+  .skillCategory h3 {
+    font-size: 1.6rem;
+  }
+
+  .skillIcon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skillIcon svg {
+    font-size: 2.2rem;
+  }
+
+  .skillIcon span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsContent {
+    padding: 40px 10px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .sectionTitle::after {
+    width: 60px;
+  }
+
+  .educationCard,
+  .skillCategory {
+    padding: 15px;
+  }
+
+  .educationCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .skillCategory h3 {
+    font-size: 1.4rem;
+  }
+
+  .skillIcon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .skillIcon svg {
+    font-size: 2rem;
+  }
+
+  .skillIcon span {
+    font-size: 0.7rem;
+  }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .skillsContainer *,
+  .skillCategory,
+  .skillIcon,
+  .educationCard {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .skillIcon:hover,
+  .educationCard:hover,
+  .skillCategory:hover {
+    transform: none;
+  }
+
+  .skillIcon:hover svg {
+    transform: none;
+  }
+}
+
+/* Estilos para el scrollbar */
+.skillsContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skillsContainer::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.skillsContainer::-webkit-scrollbar-thumb {
+  background-color: #a6d1cb;
+  border-radius: 20px;
+  border: 3px solid #0a0a0a;
+}
+
+.skillsContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #a6d1cb #0a0a0a;
+}

@@ -1,0 +1,126 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .header.scrolled {
+    background-color:transparent;
+  }
+  
+  .logo, .menu-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo-r {
+    border-right: 1px solid white;
+    padding-right: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  /* Animación del logo */
+  .logo::after, .menu-logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    animation: loadingAnimation 3s linear infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      left: -100%;
+      width: 100%;
+    }
+    50% {
+      left: 100%;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0%;
+    }
+  }
+  
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(19, 19, 16, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .menu:not(.open) {
+    transform: translateX(100%);
+  }
+  
+  .close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1010; /* Asegúrate de que esté por encima del menú */
+  }
+  
+  .menu-logo {
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 1rem 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .menu a:hover {
+    color: #89a19c;
+  }
