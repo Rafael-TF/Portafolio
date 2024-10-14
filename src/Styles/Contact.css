@@ -42,6 +42,20 @@
     color: #b3b3b3;
     line-height: 1.6;
   }
+
+  .project-highlight {
+    background-color: #282828; /* Fondo diferente para resaltar */
+    padding: 20px;
+    border-left: 4px solid #89a19c; /* Línea vertical decorativa */
+    margin-bottom: 30px;
+  }
+  
+  .project-highlight p {
+    color: #e3f4f1; /* Color de texto más claro */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente más grande */
+    line-height: 1.7;
+    font-style: italic; /* Para diferenciar aún más */
+  }
   
   .contact-content form {
     display: flex;

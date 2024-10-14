@@ -9,15 +9,15 @@
 .services-content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center; /* Centrar todo el contenido */
+    text-align: center;
 }
 
 .services-title {
     color: #a6d1cb;
     margin-bottom: 20px;
-    font-size: 2.5rem; /* Aumentar tamaño del título */
-    text-transform: uppercase; /* Convertir a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .services-intro {
@@ -28,27 +28,29 @@
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsive */
-    gap: 20px; /* Espaciado entre tarjetas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .service-card {
-    background-color: rgba(20, 20, 20, 0.9); /* Fondo oscuro para las tarjetas */
+    flex: 0 1 250px;
+    background-color: rgba(20, 20, 20, 0.9);
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Para el efecto de sombra */
+    position: relative;
 }
 
 .service-card:hover {
-    transform: translateY(-5px); /* Efecto de hover */
+    transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .icon {
-    font-size: 3rem; /* Tamaño del icono */
-    margin-bottom: 10px; /* Espaciado */
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .service-card h3 {
@@ -62,30 +64,30 @@
 }
 
 .contact-call-to-action {
-    margin-top: 40px; /* Espaciado superior */
+    margin-top: 40px;
     padding: 20px;
-    background-color: rgba(20, 20, 20, 0.8); /* Fondo semitransparente */
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 8px;
 }
 
 .contact-call-to-action p {
     font-size: 1.2rem;
-    color: #a6d1cb; /* Color del texto */
-    margin-bottom: 15px; /* Espaciado inferior */
+    color: #a6d1cb;
+    margin-bottom: 15px;
 }
 
 .contact-button {
-    background-color: #a6d1cb; /* Color del botón */
+    background-color: #a6d1cb;
     color: #131310;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #7ab0a1; /* Color del botón al pasar el ratón */
+    background-color: #7ab0a1;
 }
 
 @media (max-width: 768px) {

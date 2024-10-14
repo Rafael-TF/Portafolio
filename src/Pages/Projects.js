@@ -40,11 +40,12 @@ const projectsData = [
     link: "https://extasis-gastrobar-rafaeltravado.netlify.app/",
     github: "https://github.com/Rafael-TF/Restaurante",
     features: [
-      "Diseño responsivo adaptado a todos los dispositivos",
-      "Menú interactivo con descripciones detalladas",
-      "Galería de imágenes del restaurante y platos",
-      "Sistema de reservas en línea",
-      "Integración con redes sociales"
+      "Diseño web responsivo que garantiza una experiencia óptima en todos los dispositivos",
+      "Interfaz de usuario intuitiva y atractiva que refleja la identidad del restaurante",
+      "Menú interactivo con animaciones suaves y descripciones detalladas",
+      "Galería de imágenes optimizada para mostrar el ambiente del restaurante y sus platos",
+      "Integración seamless con redes sociales para aumentar la presencia online",
+      "Tiempo de carga rápido para una mejor experiencia de usuario y ranking en buscadores"
     ]
   },
   {

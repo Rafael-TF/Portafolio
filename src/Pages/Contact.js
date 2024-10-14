@@ -1,8 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { FaFacebookF, FaTwitter, FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import emailjs from '@emailjs/browser';
-import { motion, AnimatePresence, useInView } from 'framer-motion';
-import '../Styles/Contact.css';
+import React, { useEffect, useRef, useState } from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { motion, AnimatePresence, useInView } from "framer-motion";
+import "../Styles/Contact.css";
 
 const AnimatedSection = ({ children, delay = 0 }) => {
   const ref = useRef(null);
@@ -26,14 +32,14 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    emailjs.init('zXI1tejWwsDua0TMm');
+    emailjs.init("zXI1tejWwsDua0TMm");
   }, []);
 
   useEffect(() => {
     if (isSubmitted) {
       const timer = setTimeout(() => {
         setIsSubmitted(false);
-      }, 5000);  // El mensaje desaparecerá después de 5 segundos
+      }, 5000); // El mensaje desaparecerá después de 5 segundos
 
       return () => clearTimeout(timer);
     }
@@ -43,18 +49,22 @@ const Contact = () => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    const serviceID = 'default_service';
-    const templateID = 'template_izrvanp';
+    const serviceID = "default_service";
+    const templateID = "template_izrvanp";
 
-    emailjs.sendForm(serviceID, templateID, event.target)
-      .then(() => {
-        setIsSubmitted(true);
-        if (formRef.current) {
-          formRef.current.reset();
+    emailjs
+      .sendForm(serviceID, templateID, event.target)
+      .then(
+        () => {
+          setIsSubmitted(true);
+          if (formRef.current) {
+            formRef.current.reset();
+          }
+        },
+        (err) => {
+          console.error("Error al enviar el email:", err);
         }
-      }, (err) => {
-        console.error('Error al enviar el email:', err);
-      })
+      )
       .finally(() => {
         setIsSubmitting(false);
       });
@@ -85,9 +95,21 @@ const Contact = () => {
           <div className="project-description">
             <h3>Desarrollemos tu idea juntos</h3>
             <p>
-              Ya sea que necesites una aplicación web innovadora, una solución móvil eficiente, 
-              o asesoría tecnológica para tu negocio, estoy aquí para ayudarte. 
-              Juntos, podemos transformar tu visión en realidad y llevar tu proyecto al siguiente nivel.
+              Ya sea que necesites una aplicación web innovadora, una solución
+              móvil eficiente, o un sitio web profesional y funcional, estoy
+              aquí para ayudarte. Juntos, podemos transformar tu visión en
+              realidad y llevar tu proyecto al siguiente nivel.
+            </p>
+          </div>
+
+          <div className="project-highlight">
+            <p>
+              Con mis conocimientos y habilidades en desarrollo web, puedo crear páginas
+              atractivas, rápidas y optimizadas para ofrecer la mejor
+              experiencia a tus usuarios. Desde landing pages hasta sitios de
+              e-commerce, trabajaré contigo para transformar tu visión en una
+              presencia web poderosa. ¡Juntos llevaremos tu proyecto al
+              siguiente nivel!
             </p>
           </div>
         </AnimatedSection>
@@ -105,7 +127,7 @@ const Contact = () => {
               <label htmlFor="mensaje">Mensaje</label>
               <textarea name="mensaje" id="mensaje" required></textarea>
             </div>
-            <input 
+            <input
               type="submit"
               id="button"
               value={isSubmitting ? "Enviando..." : "Enviar Email"}
@@ -115,7 +137,7 @@ const Contact = () => {
         </AnimatedSection>
         <AnimatePresence>
           {isSubmitted && (
-            <motion.div 
+            <motion.div
               className="success-message"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -128,11 +150,14 @@ const Contact = () => {
         </AnimatePresence>
         <AnimatedSection delay={0.4}>
           <div className="project-details-description">
-            <p>Comparte tus ideas, objetivos y cualquier desafío que estés enfrentando. 
-               Estoy aquí para escucharte y ofrecer soluciones adaptadas a tus necesidades.</p>
+            <p>
+              Comparte tus ideas, objetivos y cualquier desafío que estés
+              enfrentando. Estoy aquí para escucharte y ofrecer soluciones
+              adaptadas a tus necesidades.
+            </p>
           </div>
         </AnimatedSection>
-        </div>
+      </div>
     </section>
   );
 };
