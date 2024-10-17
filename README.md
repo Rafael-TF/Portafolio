@@ -120,9 +120,3 @@ Si deseas colaborar en mis proyectos o simplemente charlar sobre tecnología y d
 ## 🌟 Agradecimientos
 
 Gracias por visitar mi portafolio. Estoy emocionado por compartir mi viaje en el mundo del desarrollo web contigo y estoy siempre buscando nuevos desafíos y oportunidades para crecer. ¡Espero que disfrutes explorando mis proyectos!
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Para más información, consulta el archivo [LICENSE](LICENSE).
