@@ -152,6 +152,19 @@ const SkillCategory = React.memo(({ category, skills }) => (
   </FadeInOutSection>
 ));
 
+const educationData = [
+  {
+    id: "fullstack",
+    title: "Mi Transformación en Desarrollador Full Stack",
+    content: `En solo 985 horas, pasé de ser un curioso de la tecnología a un desarrollador full stack capaz de construir aplicaciones web de principio a fin.`,
+  },
+  {
+    id: "law",
+    title: "Diseñando el Futuro: Un Desarrollador Web con Base Legal",
+    content: `Cinco años dedicado a las leyes me forjaron una mente analítica y una pasión por resolver problemas complejos.`,
+  },
+];
+
 const Skills = () => {
   const [activeCard, setActiveCard] = useState(null);
 
