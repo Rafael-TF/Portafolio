@@ -23,6 +23,12 @@ import effidoImage3 from '../Recursos/effido/ImagenEffido3.jpg'
 import effidoImage4 from '../Recursos/effido/ImagenEffido4.jpg'
 
 import streamlitDiamond from '../Recursos/streamlit/streamlitDiamonds.png'
+import imageStreamlit1 from '../Recursos/streamlit/imageStreamlit1.jpg'
+import imageStreamlit2 from '../Recursos/streamlit/imageStreamlit2.jpg'
+import imageStreamlit3 from '../Recursos/streamlit/imageStreamlit3.jpg'
+import imageStreamlit4 from '../Recursos/streamlit/imageStreamlit4.jpg'
+import imageStreamlit5 from '../Recursos/streamlit/imageStreamlit5.jpg'
+import imageStreamlit6 from '../Recursos/streamlit/imageStreamlit6.jpg'
 
 // Importar iconos
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
@@ -98,7 +104,7 @@ const projectsData = [
       { name: "PySpark", icon: SiApachespark },
       { name: "Plotly", icon: SiPlotly }
     ],
-    gallery: [],
+    gallery: [imageStreamlit1, imageStreamlit2, imageStreamlit3, imageStreamlit4, imageStreamlit5, imageStreamlit6],
     link: "https://machine-learning-diamonds-rafaeltravado.streamlit.app/",
     github: "https://github.com/Rafael-TF/Machine-learning-Diamonds",
     features: [
