@@ -23,6 +23,7 @@ import effidoImage3 from '../Recursos/effido/ImagenEffido3.jpg'
 import effidoImage4 from '../Recursos/effido/ImagenEffido4.jpg'
 
 import streamlitDiamond from '../Recursos/streamlit/streamlitDiamonds.png'
+import StreamlitDiamondsVideo from '../Recursos/streamlit/StreamlitDiamondsVideo.mp4'
 import imageStreamlit1 from '../Recursos/streamlit/imageStreamlit1.jpg';
 import imageStreamlit2 from '../Recursos/streamlit/imageStreamlit2.jpg';
 import imageStreamlit3 from '../Recursos/streamlit/imageStreamlit3.jpg';
@@ -93,6 +94,7 @@ const projectsData = [
   {
     id: 3,
     title: "Diamond Analytics: Aplicación de Ciencia de Datos",
+    video: StreamlitDiamondsVideo,
     image: streamlitDiamond,
     description: "Diamond Analytics es una aplicación web interactiva desarrollada con Streamlit que permite analizar y predecir precios de diamantes utilizando modelos de Machine Learning. La app facilita la exploración de datos, visualización de patrones y simulaciones en tiempo real, ofreciendo una solución intuitiva para el análisis de datos.",
     technologies: [
