@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { X as XIcon, ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FaPython } from 'react-icons/fa'
+import { SiPandas, SiNumpy, SiScikitlearn, SiStreamlit, SiApachespark, SiPlotly } from 'react-icons/si'
 
 // Importar archivos de medios
 import extasisVideo from '../Recursos/extasis/extasis.mp4'
