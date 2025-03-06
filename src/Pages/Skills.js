@@ -59,6 +59,7 @@ const skillsData = [
       { name: "NumPy", icon: SiNumpy },
       { name: "Scikit-Learn", icon: SiScikitlearn },
       { name: "TensorFlow", icon: SiTensorflow },
+      { name: "Tableau", icon: SiTableau },
       { name: "Streamlit", icon: SiStreamlit },
       { name: "PySpark", icon: SiApachespark },
       { name: "Matplotlib", icon: FaCode },
