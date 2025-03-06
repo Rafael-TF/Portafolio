@@ -59,7 +59,6 @@ const skillsData = [
       { name: "NumPy", icon: SiNumpy },
       { name: "Scikit-Learn", icon: SiScikitlearn },
       { name: "TensorFlow", icon: SiTensorflow },
-      { name: "Tableau", icon: SiTableau },
       { name: "Streamlit", icon: SiStreamlit },
       { name: "PySpark", icon: SiApachespark },
       { name: "Matplotlib", icon: FaCode },
@@ -156,12 +155,12 @@ const educationData = [
   {
     id: "fullstack",
     title: "Mi Transformación en Desarrollador Full Stack",
-    content: `En solo 985 horas, pasé de ser un curioso de la tecnología a un desarrollador full stack capaz de construir aplicaciones web de principio a fin.`,
+    content: `En solo 985 horas, pasé de ser un curioso de la tecnología a un desarrollador full stack capaz de construir aplicaciones web de principio a fin. Este viaje no fue solo un curso intensivo, sino una metamorfosis digital. Desde los fundamentos de HTML, CSS y JavaScript hasta dominar frameworks como Angular, React y Node.js, cada línea de código fue un ladrillo en la construcción de mi nueva identidad. El mundo del desarrollo web me atrapó y me desafió a pensar de forma creativa y lógica. Con ASP.NET y C#, descubrí el poder de los servicios web y la importancia de escribir código limpio y testable. La metodología Scrum me enseñó a colaborar y adaptarme en un entorno en constante evolución. Hoy, me siento listo para enfrentar cualquier desafío y aportar valor a cualquier equipo de desarrollo.`,
   },
   {
     id: "law",
     title: "Diseñando el Futuro: Un Desarrollador Web con Base Legal",
-    content: `Cinco años dedicado a las leyes me forjaron una mente analítica y una pasión por resolver problemas complejos.`,
+    content: `Cinco años dedicado a las leyes me forjaron una mente analítica y una pasión por resolver problemas complejos. Sin embargo, el mundo de la tecnología me cautivó con su dinamismo y su capacidad para transformar el mundo. La transición no fue fácil, pero la disciplina y la capacidad de aprendizaje autodidacta que cultivé en la UNED me permitieron sumergirme en el código. Hoy, mi formación en Derecho me proporciona una base sólida en lógica, análisis y resolución de problemas. una perspectiva única en el desarrollo web. Soy un puente entre dos mundos, fusionando la lógica jurídica con la creatividad del desarrollo.`,
   },
 ];
 
