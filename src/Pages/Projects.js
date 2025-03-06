@@ -20,6 +20,8 @@ import effidoImage2 from '../Recursos/effido/ImagenEffido2.jpg'
 import effidoImage3 from '../Recursos/effido/ImagenEffido3.jpg'
 import effidoImage4 from '../Recursos/effido/ImagenEffido4.jpg'
 
+import streamlitDiamond from '../Recursos/streamlit/streamlitDiamonds.png'
+
 // Importar iconos
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiExpress, SiMongodb, SiMui } from 'react-icons/si'
@@ -78,6 +80,32 @@ const projectsData = [
       "Exportación de tareas y generación de informes en PDF",
       "Optimización de rendimiento con lazy loading y code splitting",
       "Diseño adaptativo para una experiencia consistente en dispositivos móviles y de escritorio"
+    ]
+  },
+  {
+    id: 3,
+    title: "Diamond Analytics: Aplicación de Ciencia de Datos",
+    image: streamlitDiamond,
+    description: "Diamond Analytics es una aplicación web interactiva desarrollada con Streamlit que permite analizar y predecir precios de diamantes utilizando modelos de Machine Learning. La app facilita la exploración de datos, visualización de patrones y simulaciones en tiempo real, ofreciendo una solución intuitiva para el análisis de datos.",
+    technologies: [
+      { name: "Python", icon: FaPython },
+      { name: "Pandas", icon: SiPandas },
+      { name: "NumPy", icon: SiNumpy },
+      { name: "Scikit-Learn", icon: SiScikitlearn },
+      { name: "Streamlit", icon: SiStreamlit },
+      { name: "PySpark", icon: SiApachespark },
+      { name: "Plotly", icon: SiPlotly }
+    ],
+    gallery: [],
+    link: "https://machine-learning-diamonds-rafaeltravado.streamlit.app/",
+    github: "https://github.com/Rafael-TF/Machine-learning-Diamonds",
+    features: [
+      "Exploración de datos con visualizaciones interactivas",
+      "Predicción de precios de diamantes basada en modelos de Machine Learning",
+      "Interfaz sencilla y dinámica con Streamlit",
+      "Comparaciones en tiempo real con datos del mercado",
+      "Procesamiento y limpieza de datos automatizados",
+      "Implementación de algoritmos de regresión y clasificación"
     ]
   }
 ]
