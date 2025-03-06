@@ -34,6 +34,26 @@ const servicesData = [
     description: "Diseño e implemento soluciones de bases de datos robustas y eficientes utilizando MongoDB, SQL y SQL Server. Optimizo el rendimiento y garantizo la integridad de tus datos para aplicaciones de cualquier escala.",
     icon: "🗄️",
   },
+  {
+    title: "Análisis de Datos e Inteligencia de Negocios",
+    description: "Transformo datos en información valiosa para la toma de decisiones estratégicas. Creo paneles de control interactivos con herramientas como Tableau y Power BI.",
+    icon: "📊",
+  },
+  {
+    title: "Machine Learning y Modelado Predictivo",
+    description: "Desarrollo modelos de aprendizaje automático con Python, Scikit-Learn, TensorFlow y PySpark para predecir tendencias y optimizar procesos.",
+    icon: "🤖",
+  },
+  {
+    title: "Procesamiento y Limpieza de Datos",
+    description: "Limpio y transformo grandes volúmenes de datos utilizando Pandas y SQL, asegurando calidad y coherencia en la información.",
+    icon: "🧹",
+  },
+  {
+    title: "Desarrollo de Aplicaciones de Ciencia de Datos",
+    description: "Construyo aplicaciones interactivas con Streamlit y Dash para visualizar y analizar datos de manera sencilla y eficiente.",
+    icon: "📈",
+  }
 ];
 
 const Services = () => {
