@@ -33,10 +33,10 @@ import imageStreamlit6 from '../Recursos/streamlit/imageStreamlit6.jpg';
 
 import revizoomMockup from '../Recursos/revizoom/_Mockup ReviZoom Bolg.png'
 import revizoomVideo from '../Recursos/revizoom/StreamlitDiamondsVideo.mp4'
-import revizoom1 from '../Recursos/revizoom1.jpeg';
-import revizoom2 from '../Recursos/revizoom2.jpeg';
-import revizoom3 from '../Recursos/revizoom3.jpeg';
-import revizoom4 from '../Recursos/revizoom4.jpeg';
+import revizoom1 from '../Recursos/revizoom/revizoom1.jpeg';
+import revizoom2 from '../Recursos/revizoom/revizoom2.jpeg';
+import revizoom3 from '../Recursos/revizoom/revizoom3.jpeg';
+import revizoom4 from '../Recursos/revizoom/revizoom4.jpeg';
 
 // Importar iconos
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
