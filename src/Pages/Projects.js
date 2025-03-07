@@ -23,7 +23,7 @@ import effidoImage3 from '../Recursos/effido/ImagenEffido3.jpg'
 import effidoImage4 from '../Recursos/effido/ImagenEffido4.jpg'
 
 import streamlitDiamond from '../Recursos/streamlit/streamlitDiamonds.png'
-import StreamlitDiamondsVideo from '../Recursos/streamlit/Video ReviZoom.mp4'
+import StreamlitDiamondsVideo from '../Recursos/streamlit/StreamlitDiamondsVideo.mp4'
 import imageStreamlit1 from '../Recursos/streamlit/imageStreamlit1.jpg';
 import imageStreamlit2 from '../Recursos/streamlit/imageStreamlit2.jpg';
 import imageStreamlit3 from '../Recursos/streamlit/imageStreamlit3.jpg';
@@ -32,7 +32,7 @@ import imageStreamlit5 from '../Recursos/streamlit/imageStreamlit5.jpg';
 import imageStreamlit6 from '../Recursos/streamlit/imageStreamlit6.jpg';
 
 import revizoomMockup from '../Recursos/revizoom/_Mockup ReviZoom Bolg.png'
-import revizoomVideo from '../Recursos/revizoom/StreamlitDiamondsVideo.mp4'
+import revizoomVideo from '../Recursos/revizoom/Video ReviZoom.mp4'
 import revizoom1 from '../Recursos/revizoom/revizoom1.jpeg';
 import revizoom2 from '../Recursos/revizoom/revizoom2.jpeg';
 import revizoom3 from '../Recursos/revizoom/revizoom3.jpeg';
