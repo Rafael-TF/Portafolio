@@ -23,13 +23,20 @@ import effidoImage3 from '../Recursos/effido/ImagenEffido3.jpg'
 import effidoImage4 from '../Recursos/effido/ImagenEffido4.jpg'
 
 import streamlitDiamond from '../Recursos/streamlit/streamlitDiamonds.png'
-import StreamlitDiamondsVideo from '../Recursos/streamlit/StreamlitDiamondsVideo.mp4'
+import StreamlitDiamondsVideo from '../Recursos/streamlit/Video ReviZoom.mp4'
 import imageStreamlit1 from '../Recursos/streamlit/imageStreamlit1.jpg';
 import imageStreamlit2 from '../Recursos/streamlit/imageStreamlit2.jpg';
 import imageStreamlit3 from '../Recursos/streamlit/imageStreamlit3.jpg';
 import imageStreamlit4 from '../Recursos/streamlit/imageStreamlit4.jpg';
 import imageStreamlit5 from '../Recursos/streamlit/imageStreamlit5.jpg';
 import imageStreamlit6 from '../Recursos/streamlit/imageStreamlit6.jpg';
+
+import revizoomMockup from '../Recursos/revizoom/_Mockup ReviZoom Bolg.png'
+import revizoomVideo from '../Recursos/revizoom/StreamlitDiamondsVideo.mp4'
+import revizoom1 from '../Recursos/revizoom1.jpeg';
+import revizoom2 from '../Recursos/revizoom2.jpeg';
+import revizoom3 from '../Recursos/revizoom3.jpeg';
+import revizoom4 from '../Recursos/revizoom4.jpeg';
 
 // Importar iconos
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
@@ -116,6 +123,30 @@ const projectsData = [
       "Comparaciones en tiempo real con datos del mercado",
       "Procesamiento y limpieza de datos automatizados",
       "Implementación de algoritmos de regresión y clasificación"
+    ]
+  },
+  {
+    id: 4,
+    title: "ReviZoom: Blog de Análisis y Recomendaciones",
+    video: revizoomVideo,
+    image: revizoomMockup,
+    description: "ReviZoom es una plataforma web enfocada en análisis y recomendaciones de productos, ofreciendo una experiencia de usuario optimizada y un diseño moderno. Desarrollado con tecnologías web avanzadas, integra interactividad, animaciones y navegación intuitiva.",
+    technologies: [
+      { name: "HTML5", icon: FaHtml5 },
+      { name: "CSS3", icon: FaCss3Alt },
+      { name: "JavaScript", icon: FaJs }
+    ],
+    gallery: [revizoom1, revizoom2, revizoom3, revizoom4],
+    link: "https://revizoomblog.netlify.app/",
+    github: "https://github.com/Rafael-TF/ReviZoomBlog",
+    features: [
+      "Diseño moderno y minimalista con CSS avanzado",
+      "Interfaz totalmente responsive para móviles y escritorio",
+      "Menú de navegación interactivo con efecto hamburguesa",
+      "Sistema de búsqueda y filtrado dinámico en tiempo real",
+      "Paginación automática para una mejor experiencia de usuario",
+      "Animaciones CSS y transiciones suaves para mejorar la navegación",
+      "Optimización de rendimiento y accesibilidad"
     ]
   }
 ]
